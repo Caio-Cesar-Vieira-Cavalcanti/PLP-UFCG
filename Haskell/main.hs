@@ -23,3 +23,9 @@ abs n =
 
 succ :: Int -> Int
 succ x = x + 1
+
+retornaInt :: Float -> Float
+retornaInt x = 2
+
+pegaNome:: IO String
+pegaNome = getLine

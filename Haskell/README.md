@@ -17,6 +17,7 @@ Abaixo estará escrito um pequeno código em Haskell, como um exemplo de respost
 A interação com os testes se dará pela **entrada e saída** do seu programa.
 * Ou seja, deve existir a função `main`.
 * Pode, além da função principal, existir diversas outras funções **auxiliares**, e isso é totalmente recomendado!
+* Como observação, certifique-se que o output contém **quebra-de-linha**
 
 __Exemplo de questão:__ Escreva um program que recebe um inteiro e retorna seu dobro.
 
