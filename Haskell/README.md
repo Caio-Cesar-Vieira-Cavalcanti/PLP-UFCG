@@ -1,9 +1,9 @@
 # Haskell - Paradigma Funcional
 
-Este repositório aborda questões e arquivos de códigos vistos e feitos durante as aulas da disciplina, exclusivas para as discussões do paradigma funcional e da linguagem Haskell em específico.
+Este repositório aborda questões e arquivos de códigos vistos e feitos durante as aulas da disciplina, exclusivas para as discussões do paradigma funcional e da linguagem de programação Haskell.
 
 ## Uso da IDE VPL no PVAE
-As questões devem ser enviadas como arquivo de código - Haskell - criadas na IDE - VPL - utilizada no PVAE (plataforma que armazena os conteúdos e as questões da disciplina).
+As questões devem ser enviadas como arquivo de código - Haskell (.hs) - criadas na IDE - VPL - utilizada no PVAE (plataforma que armazena os conteúdos e as questões da disciplina).
 
 -> Pontos importantes a serem lembrados:
 * A IDE não permite colagem de código externo (tudo precisa ser feito na **própria IDE**)
