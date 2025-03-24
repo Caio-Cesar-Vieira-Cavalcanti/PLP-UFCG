@@ -17,6 +17,7 @@ Abaixo estará escrito um pequeno código em Prolog, como um exemplo de resposta
 A interação com os testes se dará pela **entrada e saída** do seu programa.
 * Ou seja, deve existir a relação `main`.
 * Pode, além da relação principal, existir diversas outras regras **auxiliares**, e isso é totalmente recomendado!
+* Em algumas questões, será necessário o uso de **cortes** ou do predicado `halt`, para impedir que o Prolog continue buscando mais de um solução durante sua execução (encerrando o programa na primeiro caso verdadeiro e que satisfaça a regra).
 
 __Exemplo de questão:__ Escreva um program que recebe um inteiro e retorna seu dobro.
 
