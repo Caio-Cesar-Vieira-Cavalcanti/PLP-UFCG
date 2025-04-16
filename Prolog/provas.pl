@@ -100,4 +100,54 @@ separa([H | T], [[H | R1], R2]) :-
 
 separa([H | T], [R1, [H | R2]]) :-
     separa(T, [R1, R2]).
-    
+
+%----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+% Prova 24.2
+
+/********
+QUESTÃO 3
+*********/
+
+conta_distintos(L, R) :-
+    conta_aux(L, [], R).
+
+conta_aux([], Vistos, R) :-
+    length(Vistos, R), !.
+
+conta_aux([H|T], Vistos, R) :-
+    member(H, Vistos),
+    conta_aux(T, Vistos, R), !.
+
+conta_aux([H|T], Vistos, R) :-
+    \+ member(H, Vistos),
+    append([H], Vistos, VistosAtual),
+    conta_aux(T, VistosAtual, R).
+
+/* Testes
+conta_distintos([a,b,a,c,a,b], R) -> R=3
+conta_distintos([a,a,a,a], R) -> R=1
+*/
+
+/********
+QUESTÃO 4
+*********/
+
+inserir_ordenado(X, [], [X]).
+
+inserir_ordenado(X, L, R) :-
+    inserir_ordenado_aux(X, L, [], R).
+
+inserir_ordenado_aux(X, [], L2, R) :-
+    (member(X, L2) -> R = L2 ; append(L2, [X], R)), !.
+
+inserir_ordenado_aux(X, [Y|T], L2, R) :-
+    X =< Y, append(L2, [X, Y|T], R), !.
+
+inserir_ordenado_aux(X, [Y|T], L2, R) :-
+    append(L2, [Y], L3), inserir_ordenado_aux(X, T, L3, R).
+
+/* Testes
+inserir_ordenado(3, [1, 2, 4, 5], R) -> R = [1, 2, 3, 4, 5]
+inserir_ordenado(0, [1, 2, 4, 5], R) -> R = [0, 1, 2, 4, 5]
+*/
